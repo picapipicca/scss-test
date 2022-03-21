@@ -1,0 +1,9 @@
+@import './_buttons';
+a{
+    @extend %public;
+    text-decoration: none;
+}
+button{
+    @extend %public;
+    border: none;
+}
