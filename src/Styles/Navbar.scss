@@ -1,0 +1,12 @@
+@import './_variables.scss';
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background:$bg;
+}
+
+h1{
+    color: $bg;
+    font-size: $title;;
+}
