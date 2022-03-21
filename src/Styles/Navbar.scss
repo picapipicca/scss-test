@@ -1,12 +1,28 @@
-@import './_variables.scss';
+//variables
+@import "./_variables.scss";
 
-.navbar{
-    width: 100%;
-    height: 80px;
-    background:$bg;
+.navbar {
+  width: 100%;
+  height: 80px;
+  // background:$bg;
 }
 
-h1{
-    color: $bg;
-    font-size: $title;;
+h1 {
+  color: $bg;
+  font-size: $title;
+}
+.box {
+    margin-top: 20px;
+  h1 {
+    color: blue;
+    &:hover{
+        color:red;
+    }
+  }
+  button {
+    color: red;
+  }
+  &:hover{
+      background-color: #CACACA;
+  }
 }
