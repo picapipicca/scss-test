@@ -1,16 +1,6 @@
-a {
-  margin-bottom: 10px;
-}
 
-a:nth-child(odd) {
-  text-decoration: none;
-  display: block;
-  color: blue;
-}
-
-a:nth-child(even) {
-  text-decoration: none;
-  display: block;
-  color: red;
+h1 {
+  margin: 20px;
+  color: #e61502;
 }
 /*# sourceMappingURL=Mixins.css.map */
