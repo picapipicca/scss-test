@@ -1,15 +1,11 @@
-import React from "react";
-import "../Styles/Mixins.css";
+import React, { Fragment } from "react";
+import "../Styles/Mixins.module.scss";
 
 const Mixins = () => {
   return (
-    <div>
-      <a href="#">Naver</a>
-      <a href="#">Naver</a>
-      <a href="#">Naver</a>
-      <a href="#">Naver</a>
-      <a href="#">Naver</a>
-    </div>
+    <Fragment>
+      <h1>Hello</h1>
+    </Fragment>
   );
 };
 
