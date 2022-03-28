@@ -1,5 +1,7 @@
 import React from 'react';
-import '../Styles/ExtendEx.css';
+// import '../Styles/ExtendEx.css';
+// import '../Styles/Footer.css';
+import '../Styles/Home.css';
 
 const ExtendEx = () => {
     return (

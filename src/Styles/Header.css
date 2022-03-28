@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=DM+Serif+Display&family=East+Sea+Dokdo&family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&family=Permanent+Marker&family=Playfair+Display:wght@400;500;700;900&display=swap");
+.wrap {
+  font-family: "DM Serif Display", serif;
+  padding: 45px;
+}
+
+.wrap .header {
+  background-color: #1d1d1d;
+  border: 1px solid #1d1d1d;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+@media (min-width: 48em) {
+  .wrap .header {
+    padding: 0.3 rem;
+  }
+}
+
+.wrap .header__nav ul {
+  padding-left: 0.1px;
+  display: -ms-grid;
+  display: grid;
+  gap: 1px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (60px)[2];
+      grid-template-rows: repeat(2, 60px);
+}
+
+.wrap .header__nav ul li {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .header__nav ul li:nth-child(1) {
+  -ms-grid-column: span 4;
+      grid-column-start: span 4;
+  font-size: 32px;
+}
+/*# sourceMappingURL=Header.css.map */

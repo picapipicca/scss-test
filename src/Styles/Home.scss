@@ -1,0 +1,84 @@
+@import "./_variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  font-family: $Display;
+  padding: 45px;
+}
+main {
+  h1,
+  h6 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  h6 {
+    font-size: 15px;
+    font-family: $Gowun;
+    letter-spacing: 0.5px;
+    margin-bottom: $spacing-lg;
+  }
+}
+.swiper {
+  display: grid;
+  grid-template-rows: 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: $spacing-lg;
+  &__content {
+    grid-column: 2/4;
+    background-color: $light;
+    border: 1px solid $red;
+  }
+}
+.logs {
+  h4 {
+    font-size: 32px;
+    margin-bottom: $spacing-md;
+    text-align: center;
+  }
+  &__wrapper {
+    border: 1px solid $dark;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60vh auto;
+    background-color: $dark;
+    gap: 1px;
+    margin-bottom: 10vh;
+    .log,
+    .log__intro {
+      background-color: $light;
+    }
+    .log__intro {
+      font-family: $Gowun;
+      grid-column: span 4;
+      text-align: center;
+      padding: 20px 0px;
+      font-size: 18px;
+    }
+    .log {
+      padding: $spacing-md;
+      display: grid;
+      grid-template-rows: 80% auto auto;
+      gap: $spacing-sm;
+      &__photo {
+        background-color: $dark;
+      }
+      &__title {
+        font-family: $Dokdo;
+        font-size: 25px;
+        grid-template-rows: auto;
+        @include ellipsis(1, 1.3em);
+      }
+      &__content {
+        font-family: $Marker;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
