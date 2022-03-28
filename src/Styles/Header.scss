@@ -1,0 +1,40 @@
+@import "./_variables.scss";
+.wrap{
+  font-family: $Display;
+  padding: 45px;
+  
+  .header {
+    background-color: $dark;
+    border: 1px solid $dark;
+    
+    @include breakpoint(md) {
+      padding: 0.3 rem;
+    }
+    transition: 0.3s ease all;
+  
+    &__nav {
+      ul {
+        padding-left: 0.1px;
+        display: grid;
+        gap: 1px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 60px);
+        
+        li {
+          background-color: $light;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          &:nth-child(1) {
+            grid-column-start: span 4;
+            font-size: $title;
+          }
+        }
+
+      }
+      
+    }
+  }
+}
+  
